@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+#container ul{
+  list-style: none;
+  position: relative;
+}
+
+#container ul li{
+  background-color: black;
+  color: white;
+  font-size: 18px;
+  float: left;
+  text-align: center;
+  height: 50px;
+  line-height: 50px;
+  border: 1px solid gray;
+  width: 150px;
+}
+
+#container ul li:hover{
+  background-color: red;
+}
+
+#container ul ul{
+  visibility: hidden;
+}
+
+#container ul li:hover > ul  {
+  visibility: visible;
+}
+
+#container ul ul.Ente ul{
+  position: absolute;
+  top: 50px;
+  margin-left: 150px;
+}
+
+#container ul ul.Ente ul.Tres{
+  position: absolute;
+  top: 100px;
+}
+
+#container ul ul.Ente ul.Tres ul.Number{
+  position: absolute;
+  top: 100px;
+}
+</style>
+</head>
+<body>
+<div id="container">
+
+<ul>
+  <li>Home</li>
+  <li>Nothing</li>
+
+  <li>Number
+    <ul class="Ente">
+      <li>One</li>
+
+      <li>Two
+        <ul>
+          <li>Uno</li>
+          <li>Dos</li>
+
+          <li>Tres
+            <ul class="Tres">
+              <li>Isa</li>
+              <li>Dalawa</li>
+              
+              <li>Tatlo
+                <ul class="Number">
+                  <li>1</li>
+                  <li>2</li>
+                  <li>3</li>
+                </ul>
+              </li>
+
+            </ul>
+          </li>
+          
+        </ul>
+      </li>
+
+      <li>Three</li>
+    </ul>
+  </li>
+
+</ul>
+</div>
+</body>
+</html>
