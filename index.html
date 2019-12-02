@@ -15,19 +15,18 @@
 
 #container ul{
   list-style: none;
-  position: relative;
 }
 
 #container ul li{
   background-color: black;
   color: white;
-  font-size: 18px;
+  font-size: 15px;
   float: left;
   text-align: center;
-  height: 50px;
-  line-height: 50px;
+  height: 40px;
+  line-height: 30px;
   border: 1px solid gray;
-  width: 150px;
+  width: 101px;
 }
 
 #container ul li:hover{
@@ -36,37 +35,32 @@
 
 #container ul ul{
   visibility: hidden;
+  position: relative;
 }
 
 #container ul li:hover > ul  {
   visibility: visible;
 }
 
-#container ul ul.Ente ul{
+#container ul ul ul{
   position: absolute;
-  top: 50px;
-  margin-left: 150px;
+  top: 84px;
+  margin-left: 70px;
+  
 }
-
-#container ul ul.Ente ul.Tres{
-  position: absolute;
-  top: 100px;
-}
-
-#container ul ul.Ente ul.Tres ul.Number{
-  position: absolute;
-  top: 100px;
-}
-
 body {
-  background: linear-gradient(to right, rgb(85, 98, 112), rgb(255, 107, 107));
+  background: linear-gradient(to right, #2c3e50, #fd746c);
+}
+
+#menu {
+  height: 100px;
 }
 </style>
 </head>
 <body>
 <div id="container">
 
-<ul>
+<ul id="menu">
   <li>Home</li>
   <li>Nothing</li>
 
@@ -74,7 +68,8 @@ body {
     <ul class="Ente">
       <li>One</li>
 
-      <li>Two
+      <li>Two</li>
+      <li>Three
         <ul>
           <li>Uno</li>
           <li>Dos</li>
@@ -88,7 +83,48 @@ body {
                 <ul class="Number">
                   <li>1</li>
                   <li>2</li>
-                  <li>3</li>
+                  <li>3
+                    <ul class="Lorem">
+                      <li>Lorem</li>
+                      <li>ipsum</li>
+                      <li>sit
+                        <ul class="amet">
+                          <li>consectetuer</li>
+                          <li>adipiscing</li>
+                          <li>elit
+                            
+                            <ul class="Maecenas">
+                              <li>Maecenas</li>
+                              <li>porttitor</li>
+                              <li>congue
+                                
+                                <ul class="massa">
+                                  <li>massa</li>
+                                  <li>Fusce</li>
+                                  <li>posuere
+                                    
+                                    <ul class="magna">
+                                      <li>magna</li>
+                                      <li>sed</li>
+                                      <li>pulvinar
+                                        
+                                        <ul class="ultricies">
+                                          <li>purus</li>
+                                          <li>lectus</li>
+                                          <li>malesuada</li>
+                                        </ul>
+
+                                      </li>
+                                    </ul>
+                                  </li>
+                                </ul>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
                 </ul>
               </li>
 
@@ -97,8 +133,6 @@ body {
           
         </ul>
       </li>
-
-      <li>Three</li>
     </ul>
   </li>
 
